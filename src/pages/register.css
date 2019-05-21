@@ -1,0 +1,30 @@
+.bc-admin-color-blue{
+    color:#20a8d8;
+}
+.bc-admin-bg-blue{
+    float: center;
+    background: #2C5364 !important;
+    border-color: #041610 !important;
+}
+.bc-admin-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bc-admin-login-bg{
+    background: #0F2027;
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+background: linear-gradient(to right, rgb(128, 210, 245), rgb(4, 31, 27), #0F2027);
+
+}
+.help-block{
+    color:rgb(167, 48, 48);
+    font-size: 0.9em;
+    margin-bottom: 1rem;text-align: center;
+    margin-top: -1rem;
+}
+
+p{
+    align-self: baseline;
+    font-family: "Times New Roman", Times, serif;
+}

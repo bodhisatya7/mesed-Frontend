@@ -1,0 +1,21 @@
+/* 
+.carousel .thumb img {
+    width: 100% !important;
+    height: 100% !important;
+   
+}
+
+.carousel .slide img {
+    max-height: 300px;  /* change this to whatever you want *
+    width: auto;
+    float:left;
+    opacity: 0.40 ;
+    filter: alpha(opacity=50);
+    background-color: black ;
+}
+.scrolll{
+    height: 200px !important;
+} */
+.artistInfo{
+    width:400px;
+}

@@ -3,9 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@coreui/coreui": "^2.1.9",
+    "@coreui/react": "^2.1.7",
+    "bootstrap": "^4.3.1",
+    "history": "^4.9.0",
+    "jquery": "^3.4.1",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-frame-component": "^4.1.0",
+    "react-redux": "^6.0.0",
+    "react-responsive-carousel": "^3.1.49",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "react-select": "^2.3.0",
+    "react-table": "^6.9.0",
+    "react-tabs": "^3.0.0",
+    "react-tooltip": "^3.9.2",
+    "redix": "^1.0.22",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

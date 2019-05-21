@@ -1,0 +1,31 @@
+.nav{
+    color:blue;
+    
+}
+.header{
+  height:100px;
+}
+.card{
+    width:440px;
+    height:400px;
+    opacity: 0.40;
+    filter: alpha(opacity=50); 
+    background-color: black;
+    color:white;
+    margin:10px 10px 10px 10px;
+    float:left;
+}
+.img{
+    width:30%;
+    height:100px;
+    margin-left: 30%;
+}
+.element {
+    @include float-left;
+  }
+  .another-element {
+    @include float-right;
+  }
+  .one-more {
+    @include float-none;
+  }
