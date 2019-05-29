@@ -1,7 +1,7 @@
 import React from 'react'
-import $ from 'jquery'
 import './../Person/Person.css'
 import 'bootstrap'
+
 class person extends React.Component{
     constructor(props) {
         super(props);
@@ -31,16 +31,16 @@ class person extends React.Component{
         const headers = new Headers();
         headers.append('content-Type', 'application/json');
         const option = {
-            method: 'post',
-            headers,
-            body:JSON.stringify({"userId": "36df28e0-788c-11e9-bf82-db22f89ba3a5"})
+            method: 'get',
+            headers:JSON.stringify({"token": window.localStorage.getItem('token_id')}),
+            // body:JSON.stringify({"userId": "36df28e0-788c-11e9-bf82-db22f89ba3a5"})
     
         };
-        const url ="http://localhost:3030/api/v1/artist/details";
+        const user_id= window.localStorage.getItem('user_id')
+        const url =`http://localhost:3000/api/v1/artist/${user_id}`;
         const request = new Request(url, option);
         const response = await fetch(request);
         const res = await response.json();
-        debugger;
         this.setState({
             first_name: res.first_name,
             last_name: res.last_name,
@@ -62,7 +62,7 @@ class person extends React.Component{
     }
     render() {
         return(
-            <div>
+            <div class="container-fuid person">
                  <div class="card artistInfo float-left ">
                     <img class="card-img-top"  src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg" alt="Card image cap"/>
                     <div class="card-body">
@@ -71,14 +71,14 @@ class person extends React.Component{
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
-                  <div class="card artistInfo float-left">
+                  {/* <div class="card artistInfo float-left">
                     <img class="card-img-top"  src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg" alt="Card image cap"/>
                     <div class="card-body">
                       <h5 class="card-title">{this.state.first_name}{this.state.last_name}</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
-                  </div>
+                  </div> */}
             </div>
         );
     }

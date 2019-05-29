@@ -34,7 +34,7 @@ class Login extends Component {
           "password": password})
       };
 
-      const url ="http://localhost:3030/api/v1/user/login";
+      const url ="http://localhost:3000/api/v1/user/login";
       const request = new Request(url, option);
       const response = await fetch(request);
       const res = await response.json();

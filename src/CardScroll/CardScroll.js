@@ -77,7 +77,7 @@ class DemoCarousel extends Component {
                             className="img-fluid"/>
                         </a>
                       </figure>
-                      <figure className="col-md-2 d-md-inline-block">
+                      {/* <figure className="col-md-2 d-md-inline-block">
                         <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(12).jpg"
                           data-size="1600x1067">
                           <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(12).jpg"
@@ -90,7 +90,7 @@ class DemoCarousel extends Component {
                           <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(14).jpg"
                             className="img-fluid"/>
                         </a>
-                      </figure>
+                      </figure> */}
 
                     </div>
 
