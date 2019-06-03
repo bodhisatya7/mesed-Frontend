@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Menu, Segment } from 'semantic-ui-react'
+import Header from '../../Header/Header'
 //import Upload from './upload'
-//import './artistdash.css'
+import './artistdash.css'
 
 class ArtistDash extends Component{
     // constructor(props){
@@ -61,7 +62,8 @@ class ArtistDash extends Component{
       const { activeItem } = this.state
   
       return (
-        <div>
+        <div className="artistdashheader">
+          <Header />
           <Menu pointing tabular>
             <Menu.Item
                 name='Upload Music'

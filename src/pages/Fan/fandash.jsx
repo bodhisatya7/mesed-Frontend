@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { Card, Col, Row } from 'antd';
+import Header from '../../Header/Header'
 import 'antd/dist/antd.css';
 import './fandash.css';
 import TempData from '../../temp.json';
@@ -9,6 +10,7 @@ class FanDash extends Component{
     render() {
         return(
             <div>
+                <Header />
                 <Breadcrumb className="breadcrumbs">
                 <Breadcrumb.Item active>Discover Jukebox</Breadcrumb.Item>
                 <Breadcrumb.Item href="/likes">Likes</Breadcrumb.Item>

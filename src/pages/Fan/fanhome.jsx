@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './fanhome.css';
 import TempData from '../../temp.json';
+import Header from '../../Header/Header'
 // import image1 from '../a.jpeg';
 // import image2 from '../b.jpg';
 // import image3 from '../c.jpg';
@@ -36,6 +37,7 @@ class Fan extends Component{
  render() {
             return(
                 <div>
+                   <Header />
                      <div class="row">
                      <div className="lef col-lg-2">
                     <div className="topnav">
