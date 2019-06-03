@@ -1,10 +1,10 @@
 
-   .left {width: 20%;}
-   .right {width: 25%;}
-   .middle {width: 50%; margin-left: 33%; margin-right: -32%}
+   .lef {width: 16.66%; margin-left: 1%; margin-right: 1%}
+   .rig {width: 25%; margin-left: 2%}
+   .mid {width: 50%; margin-left: 2%}
    .col-12 {width: 100%;}
    @media only screen and (max-width: 768px) {
-     .left .middle .right{
+     .lef .mid .rig{
        width: 100%;
      }
    } 

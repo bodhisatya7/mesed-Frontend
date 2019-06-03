@@ -26,24 +26,18 @@ const responsive = {
      }
    };
 class Fan extends Component{
-  // constructor(){
-  //   super();
-  //   this.showCard = this.showCard.bind(this)
-  //       this.state = {
-  //         index: 0,
-  //         TempD: TempData
-  //       }
-  // }
-  // showCard(){
-  //   this.setState({
-  //     index: this.state.TempD.id
-  //   }) 
-  // }
+   constructor(){
+     super();
+     this.handleClick = this.handleClick.bind(this); 
+   }
+   handleClick(){
+    this.props.history.push('/fan_dash')
+   }
  render() {
             return(
                 <div>
                      <div class="row">
-                     <div className="left col-lg-2">
+                     <div className="lef col-lg-2">
                     <div className="topnav">
                          <input type="text" placeholder="Type any artist, genre, mood etc.." />
                          <button className="button" ><span>Play All</span></button>
@@ -77,13 +71,13 @@ class Fan extends Component{
                          </div>
                          </div>
                     </div>
-                         <div className="middle col-lg-6">
+                         <div className="mid col-lg-6">
                           {/* {TempData.map((TempD, index)=>{ return ( <div>
                             <Card><Card.Img src={TempD.image} /></Card>
                           </div>)})} */}
                           <Card><Card.Img src={image4} /></Card>
                             </div>
-                    <div className="right col-lg-3">
+                    <div className="rig col-lg-3">
                          <div className="song-des">
                             <h3> Song Name </h3>
                             <p>Song Description goes here...</p>
@@ -95,7 +89,7 @@ class Fan extends Component{
                          </div>
                     </div>
                 </div>
-                <div align="center"><button className="newbutton"><span>Go to Dashboard</span></button></div>
+                <div align="center"><button className="newbutton" onClick={this.handleClick}><span>Go to Dashboard</span></button></div>
                      <div className="col-12">
                       <div className="artists-car" align="center">
 
