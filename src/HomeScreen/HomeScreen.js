@@ -1,5 +1,6 @@
 import React from 'react'
 import './HomeScreen.css'
+import Header from '../Header/Header'
 
 class homeScreen extends React.Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class homeScreen extends React.Component {
     }
    render(){ return (
        <div>
+           <Header />
         <div className="Hs">
             <div className="split left" onClick={this.handleSubmit}>
                 <div className="centered">
