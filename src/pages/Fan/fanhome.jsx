@@ -95,6 +95,7 @@ class Fan extends Component{
                          </div>
                     </div>
                 </div>
+                <div align="center"><button className="newbutton"><span>Go to Dashboard</span></button></div>
                      <div className="col-12">
                       <div className="artists-car" align="center">
 
