@@ -5,7 +5,11 @@ import { Route } from "react-router-dom";
 import Login from './pages/login'
 import HomeScreen from './HomeScreen/HomeScreen'
 import Person from './Person/Person'
-import Artist from './Artist/Artist'
+import Artist from './pages/Artist/Artist'
+import Fan from './pages/Fan/fanhome';
+import FanDash from './pages/Fan/fandash';
+import ArtistHome from './pages/Artist/artisthome';
+import ArtistDash from './pages/Artist/artistdash';
 
 
 function App() {
@@ -18,6 +22,10 @@ function App() {
     <Route exact path="/register" component={Register} />
     <Route exact path="/artist" component={Artist} />
     <Route exact path="/person" component={Person} />
+    <Route exact path="/fan_home" component={Fan} />
+    <Route exact path="/fan_dash" component={FanDash} />
+    <Route exact path="/artist_home" component={ArtistHome} />
+    <Route exact path="/artist_dash" component={ArtistDash} />
     </div>);
   }
     
