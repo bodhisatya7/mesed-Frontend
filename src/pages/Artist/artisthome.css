@@ -1,11 +1,60 @@
-body, html {
-    height: 100%;
-    }
+
     .bg {
     background-image: url("https://ichef.bbci.co.uk/images/ic/960x540/p01bqlx8.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.7;
-    }
+    opacity: 0.9;
+}
+.artisthometext {
+    color: red;
+    font-family: 'Franklin Gothic Medium';
+    font-style: oblique
+}
+.newbutton1 {
+    float: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 20%;
+    background-color: rgb(238, 224, 231);
+    color: black;
+    text-align: center;
+    font-size: 80%;
+    padding: 2%;
+    width: 10%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2%;
+    box-shadow: 5px 5px 5px black;
+    border-color: #293f50;
+  }
+  
+  .newbutton1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: black;
+  }
+  
+  .newbutton1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10%;
+    transition: 0.5s;
+    color: black;
+  }
+  
+  .newbutton1:hover span {
+    padding-right: 15%;
+    color: black;
+  }
+  
+  .newbutton1:hover span:after {
+    opacity: 1;
+    right: 0;
+    color: black;
+  }
