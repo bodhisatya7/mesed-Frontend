@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import Register from './pages/register';
 import { Route } from "react-router-dom";
-import Login from './pages/login'
-import HomeScreen from './HomeScreen/HomeScreen'
-import Person from './Person/Person'
-import Artist from './pages/Artist/Artist'
+import Helmet from 'react-helmet';
+import Login from './pages/login';
+import Register from './pages/register';
+import HomeScreen from './HomeScreen/HomeScreen';
+import Person from './Person/Person';
+import Artist from './pages/Artist/Artist';
 import Fan from './pages/Fan/fanhome';
 import FanDash from './pages/Fan/fandash';
 import ArtistHome from './pages/Artist/artisthome';
@@ -17,6 +18,7 @@ function App() {
     return(<div className="App">
     <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css"></link>
     <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/coreui-icons.min.css"></link>
+    <Helmet bodyAttributes={{style: 'background-color :  #262626'}}/>
     <Route exact path="/" component={HomeScreen} />
     <Route exact path="/login" component={Login} />
     <Route exact path="/register" component={Register} />

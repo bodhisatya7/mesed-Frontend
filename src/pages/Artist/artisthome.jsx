@@ -16,7 +16,7 @@ class ArtistHome extends Component{
           <div className="bg" align="center">
                        {/* <Confetti
                         /> */}
-           <div className="artisthomebody">
+                <div className="artisthomebody">
                 <h1 className="artisthometext">Want people to listen to your music?</h1>
                 <button className="newbutton1" onClick={this.handleClick}><span>Register Today</span></button>
          </div>

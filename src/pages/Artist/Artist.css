@@ -1,0 +1,99 @@
+
+.artistleft {
+    width: 20%; 
+    margin-top: 5%; 
+    margin-left: 3%; 
+    margin-right: 1%; 
+    float: left;
+    box-shadow: 5px 5px 5px 5px grey;
+    border: 2px 2px 2px 2px black;
+    background: black;
+    background-color: #b2b2b2;
+    background-color: rgba(0, 0, 0, .3);
+    background: -moz-linear-gradient(#648880, #293f50);
+    background: linear-gradient(#648880, #293f50);
+    font-family: "Times New Roman", Times, serif;
+    max-height: 70%;
+    overflow: auto
+}
+.artistmid {
+    width: 50%;
+    margin-top: 5%; 
+    margin-left: 1%; 
+    margin-right: 1%; 
+    float: left;
+    box-shadow: 5px 5px 5px 5px grey;
+    border: 2px 2px 2px 2px black;
+    background: black;
+    background-color: #b2b2b2;
+    background-color: rgba(0, 0, 0, .3);
+    background: -moz-linear-gradient(#648880, #293f50);
+    background: linear-gradient(#648880, #293f50);
+    font-family: "Times New Roman", Times, serif;
+    height: 440px;
+}
+.artistright {
+    width: 30%; 
+    margin-top: 5%; 
+    margin-right: 1%; 
+    float: left;
+    box-shadow: 5px 5px 5px 5px grey;
+    border: 2px 2px 2px 2px black;
+    background: black;
+    background-color: #b2b2b2;
+    background-color: rgba(0, 0, 0, .3);
+    background: -moz-linear-gradient(#648880, #293f50);
+    background: linear-gradient(#648880, #293f50);
+    font-family: "Times New Roman", Times, serif;
+    height: 440px;
+}
+.newbutton2 {
+    text-align: center;
+    align-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgb(31, 90, 199);
+    color: white;
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+    border-color: #01060a;
+  }
+  
+  .newbutton2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: black;
+  }
+  
+  .newbutton2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10%;
+    transition: 0.5s;
+    color: black;
+  }
+  
+  .newbutton2:hover span {
+    padding-right: 15%;
+    color: black;
+  }
+  
+  .newbutton2:hover span:after {
+    opacity: 1;
+    right: 0;
+    color: black;
+  }
+  .buttongroup2 .button{
+      margin-top: 10%;
+      background: black;
+      color: white;
+  }
