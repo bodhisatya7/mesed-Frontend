@@ -27,7 +27,7 @@ export default class artist extends React.Component{
                 <div className="artistmid col-lg-6">
                 <h2>Artist Name</h2>
                 <h4>Track Name</h4>
-                   <img className="newimage" src="http://promotionmusicnews.com/promotionmusicnews.com/html/wp-content/uploads/Green-Day-750x400.jpg" />
+                   <img alt="Artist" className="newimage" src="http://promotionmusicnews.com/promotionmusicnews.com/html/wp-content/uploads/Green-Day-750x400.jpg" />
                 </div>
                 <div className="artistright col-lg-3">
                 <h2>Track Value</h2>

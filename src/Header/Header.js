@@ -64,20 +64,20 @@ export default class header extends Component {
             <li><a href="/login"><i className="lnr lnr-music-note"></i> <span>Albums</span></a></li>						
             <li className="menu-list"><a href="/register"><i className="lnr lnr-indent-increase"></i> <span>Browser</span></a>  
                 <ul className="sub-menu-list">
-                    <li><a href="browse.html">Artists</a> </li>
-                    <li><a href="404.html">Services</a> </li>
+                    <li><a href="/">Artists</a> </li>
+                    <li><a href="/">Services</a> </li>
                 </ul>
             </li>
-            <li><a href="blog.html"><i className="lnr lnr-book"></i><span>Blog</span></a></li>
-            <li><a href="typography.html"><i className="lnr lnr-pencil"></i> <span>Typography</span></a></li>
-            <li className="menu-list"><a href="#"><i className="lnr lnr-heart"></i>  <span>My Favourities</span></a> 
+            <li><a href="/"><i className="lnr lnr-book"></i><span>Blog</span></a></li>
+            <li><a href="/"><i className="lnr lnr-pencil"></i> <span>Typography</span></a></li>
+            <li className="menu-list"><a href="/"><i className="lnr lnr-heart"></i>  <span>My Favourities</span></a> 
                 <ul className="sub-menu-list">
-                    <li><a href="radio.html">All Songs</a></li>
+                    <li><a href="/">All Songs</a></li>
                 </ul>
             </li>
-            <li className="menu-list"><a href="contact.html"><i className="fa fa-thumb-tack"></i><span>Contact</span></a>
+            <li className="menu-list"><a href="/"><i className="fa fa-thumb-tack"></i><span>Contact</span></a>
                 <ul className="sub-menu-list">
-                    <li><a href="contact.html">Location</a> </li>
+                    <li><a href="/">Location</a> </li>
                 </ul>
             </li>     
         </ul>
