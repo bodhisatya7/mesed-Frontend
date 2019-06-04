@@ -6,6 +6,7 @@ import Login from './pages/login'
 import HomeScreen from './HomeScreen/HomeScreen'
 import Person from './Person/Person'
 import Artist from './Artist/Artist'
+import upload from './UploadImgToS3/UploadImgToS3'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Route exact path="/register" component={Register} />
     <Route exact path="/artist" component={Artist} />
     <Route exact path="/person" component={Person} />
+    <Route exact path="/upload" component={upload} />
     </div>);
   }
     
