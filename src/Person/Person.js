@@ -64,11 +64,11 @@ class person extends React.Component{
         return(
             <div class="container-fuid person">
                  <div class="card artistInfo float-left ">
-                    <img class="card-img-top"  src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg" alt="Card image cap"/>
-                    <div class="card-body">
-                      <h5 class="card-title">{this.state.first_name}{this.state.last_name}</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <img className="card-img-top"  src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg" alt="Anything"/>
+                    <div className="card-body">
+                      <h5 className="card-title">{this.state.first_name}{this.state.last_name}</h5>
+                      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
                   {/* <div class="card artistInfo float-left">

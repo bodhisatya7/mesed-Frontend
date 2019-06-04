@@ -43,10 +43,11 @@ class Register extends Component {
         })
       };
 
-      const url ="http://10.14.7.204:3030/api/v1/user/register";
+      const url ="http://localhost:3030/api/v1/user/register";
       const request = new Request(url, option);
       const response = await fetch(request);
       const status = await response.json();
+      debugger;
       this.setState({person:status.user_id, loading: false})
       window.localStorage.setItem('user_id', status.user_id)
     }

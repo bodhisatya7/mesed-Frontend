@@ -34,7 +34,7 @@ class Login extends Component {
           "password": password})
       };
 
-      const url ="http://localhost:3000/api/v1/user/login";
+      const url ="http://localhost:3030/api/v1/user/login";
       const request = new Request(url, option);
       const response = await fetch(request);
       const res = await response.json();
@@ -44,10 +44,16 @@ class Login extends Component {
         this.setState({person:res.user_id, loading: false})
         window.localStorage.setItem('user_id', res.user_id)
         window.localStorage.setItem('token_id', res.token_id)
-        this.props.history.push('/header')
+        // if(res.role==='fan'){
+        // this.props.history.push('/fan_home')
+        // } else if(res.role==='artist'){
+        //   this.props.history.push('/artist_home')
+        // }
+        this.props.history.push('/fan_home')
+        
       }
       else{
-        alert("worng");
+        alert("wrong");
       }
     }
   }
