@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import "./register.css";
+//import { Fade } from "react-bootstrap";
 
 class Register extends Component {
   constructor(props) {
@@ -28,8 +29,8 @@ class Register extends Component {
   async handleSubmit(event) {
     event.preventDefault();
     this.setState({ formSubmitted: true });
-    const { email, password, first_name, last_name, role } = this.state;
-    if (first_name && last_name && email && password && role) {
+    const { email, password, first_name, last_name, role, phone_number } = this.state;
+    if (first_name && last_name && email && password && role && phone_number) {
       const headers = new Headers();
       headers.append('content-TYpe', 'application/json');
       const option = {
@@ -38,18 +39,31 @@ class Register extends Component {
           body:JSON.stringify({"email": email,
           "password": password, 
           "first_name": first_name, 
-          "last_name": last_name, 
+          "last_name": last_name,
+          "phone_number": phone_number,
           "role": role
         })
       };
 
-      const url ="http://localhost:3030/api/v1/user/register";
+      const url ="http://localhost:3000/api/v1/user/register";
       const request = new Request(url, option);
       const response = await fetch(request);
-      const status = await response.json();
+      const res = await response.json();
+      const status = await response.status;
+
       debugger;
-      this.setState({person:status.user_id, loading: false})
-      window.localStorage.setItem('user_id', status.user_id)
+      if(status === 200) {
+        this.setState({person:res.user_id, loading: false})
+        window.localStorage.setItem('user_id', res.user_id)
+        alert('Registration Successful');
+        if(role==='fan')
+        this.props.history.push('/fan_home')
+        else if(role==='artist')
+        this.props.history.push('/artist')
+      }
+      else {
+        alert('Registration failed')
+      }
     }
   }
   render() {
@@ -125,7 +139,7 @@ class Register extends Component {
                         value={this.state.email}
                       />
                     </div>
-                    {formSubmitted && !email && (
+                    {formSubmitted && !email &&  (
                       <div className="help-block">Email is required</div>
                     )}
                      <div className="input-group mb-3">

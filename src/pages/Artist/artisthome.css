@@ -5,25 +5,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.7;
+    font-family: 'American Typewriter, serif';
 }
 .artisthometext {
     color: red;
-    font-family: 'Franklin Gothic Medium';
-    font-style: oblique
+    font-weight: 900;
 }
 .newbutton1 {
   text-align: center;
   align-content: center;
-  margin-top: 38%;
-  margin-bottom: 10%;
   border-radius: 40rem;
   background-color: rgb(77, 228, 122);
   color: white;
   text-align: center;
   font-size: 20px;
-  font-family: 'Franklin Gothic Medium';
-  font-style: oblique;
   padding: 1%;
   width: 20%;
   transition: all 0.5s;
@@ -59,4 +55,8 @@
     opacity: 1;
     right: 0;
     color: black;
+  }
+  .btn-grp{
+    margin-top: 30%;
+    margin-left: 50%;
   }

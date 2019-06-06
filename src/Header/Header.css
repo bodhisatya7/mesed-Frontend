@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5 {
 
 .left-side {
     width: 200px;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -567,7 +567,7 @@ ul.nav li a span {
         STICKY HEADER
 ---------------------------------*/
 .sticky-header .logo {
-  position: fixed;
+  position: relative;
     top: 0;
     left: 0;
     width: 200px;
@@ -592,7 +592,7 @@ ul.nav li a span {
 }
 
 .sticky-header .main-content {
-    padding-top: 50px;
+    padding-top: 5%;
 }
 .sticky-header .menu-right {
     margin-right: 0;
@@ -602,6 +602,4 @@ ul.nav li a span {
 }
 .sticky-header.left-side-collapsed .menu-right {
     margin-right: 0;
-}
-.menu-right {
 }

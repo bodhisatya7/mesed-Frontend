@@ -29,10 +29,18 @@ const responsive = {
 class Fan extends Component{
    constructor(){
      super();
+     this.state = {
+       url:image4
+     }
      this.handleClick = this.handleClick.bind(this); 
    }
    handleClick(){
     this.props.history.push('/fan_dash')
+   }
+   showCard (Imgurl){
+    this.setState({
+      url:Imgurl
+    })
    }
  render() {
             return(
@@ -77,7 +85,7 @@ class Fan extends Component{
                           {/* {TempData.map((TempD, index)=>{ return ( <div>
                             <Card><Card.Img src={TempD.image} /></Card>
                           </div>)})} */}
-                          <Card><Card.Img src={image4} /></Card>
+                          <Card><Card.Img src={this.state.url} /></Card>
                             </div>
                     <div className="rig col-lg-3">
                          <div className="song-des">
@@ -118,7 +126,7 @@ class Fan extends Component{
                                 className="d-block"
                                 src={TempD.image}
                                 alt={TempD.id}
-                                onClick={this.showCard}
+                                onClick={()=>this.showCard(TempD.image)}
                               /><h4>{TempD.title}</h4> </div>)})}
                               </Carousel>
 

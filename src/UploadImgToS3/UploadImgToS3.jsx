@@ -11,6 +11,11 @@ constructor( props ) {
    selectedFiles: null
   }
  }
+//  nameChange = (event) => {
+//    this.setState({
+//       songName: event.target.text
+//    });
+//  };
 singleFileChangedHandler = ( event ) => {
   this.setState({
    selectedFile: event.target.files[0]
@@ -25,10 +30,20 @@ multipleFileChangedHandler = (event) => {
 singleFileUploadHandler = ( event ) => {
     console.log(this.state.selectedFile)
   const data = new FormData();
+  let selectedFile = this.state.selectedFile;
 // If file selected
   if ( this.state.selectedFile ) {
+    let bodyq =  ({
+      'description':'xyz',
+      'genre': 'rock'
+    })
+data.append('album_id', '1');
+data.append('songName', selectedFile, selectedFile.name);
+data.append('artist_id', '36df28e0-788c-11e9-bf82-db22f89ba3a5');
+data.append('song', JSON.stringify(bodyq))
 data.append( 'profileImage', this.state.selectedFile, this.state.selectedFile.name );
-axios.post( 'http://localhost:3030/api/v1/artist/artistId/album/song/upload', data, {
+const user_id= window.localStorage.getItem('user_id')
+axios.post( `http://10.14.2.15:3000/api/v1/artist/${user_id}/album/song/upload`, data, {
     headers: {
      'accept': 'application/json',
      'Accept-Language': 'en-US,en;q=0.8',
@@ -129,19 +144,23 @@ render() {
 {/* Single File Upload*/}
      <div className="card border-light mb-3 mt-5" style={{ boxShadow: '0 5px 10px 2px rgba(195,192,192,.5)' }}>
       <div className="card-header">
-       <h3 style={{ color: '#555', marginLeft: '12px' }}>Single Image Upload</h3>
-       <p className="text-muted" style={{ marginLeft: '12px' }}>Upload Size: 250px x 250px ( Max 2MB )</p>
+       <h3 style={{ color: '#555', marginLeft: '12px' }}>Song upload</h3>
+       <p className="text-muted" style={{ marginLeft: '12px' }}></p>
       </div>
       <div className="card-body">
-       <p className="card-text">Please upload an image for your profile</p>
+       <h4 className="card-text">Upload a Song</h4>
        <input type="file" onChange={this.singleFileChangedHandler}/>
+       {/* <h4 className="card-text">Enter Song Name</h4>
+       <input type="placeholder" onChange={this.nameChange}/> */}
+       {/* <h4 className="card-text">Enter a cover picture for your song</h4>
+       <input type="file" onChange={this.singleFileChangedHandler}/> */}
        <div className="mt-5">
         <button className="btn btn-info" onClick={this.singleFileUploadHandler}>Upload!</button>
        </div>
       </div>
      </div>
 {/* Multiple File Upload */}
-     <div className="card border-light mb-3" style={{ boxShadow: '0 5px 10px 2px rgba(195,192,192,.5)' }}>
+     {/* <div className="card border-light mb-3" style={{ boxShadow: '0 5px 10px 2px rgba(195,192,192,.5)' }}>
       <div className="card-header">
        <h3 style={{ color: '#555', marginLeft: '12px' }}>Upload Muliple Images</h3>
        <p className="text-muted" style={{ marginLeft: '12px' }}>Upload Size: 400px x 400px ( Max 2MB )</p>
@@ -153,7 +172,7 @@ render() {
         <button className="btn btn-info" onClick={this.multipleFileUploadHandler}>Upload!</button>
        </div>
       </div>
-     </div>
+     </div> */}
 </div>
    </div>
   );
