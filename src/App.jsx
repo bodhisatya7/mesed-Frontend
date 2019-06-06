@@ -24,11 +24,11 @@ function App() {
         <ReverseRoute exact path="/" component={HomeScreen} />
         <ReverseRoute exact path="/login" component={Login} />
         <ReverseRoute exact path="/register" component={Register} />
+        <ReverseRoute exact path="/artist_home" component={ArtistHome} />
         <PrivateRoute exact path="/artist" component={Artist} />
+        <PrivateRoute exact path="/artist_dash" component={ArtistDash} />
         <PrivateRoute exact path="/fan_home" component={Fan} />
         <PrivateRoute exact path="/fan_dash" component={FanDash} />
-        <ReverseRoute exact path="/artist_home" component={ArtistHome} />
-        <PrivateRoute exact path="/artist_dash" component={ArtistDash} />
     </div>
            )
         }

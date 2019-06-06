@@ -51,27 +51,26 @@ export default class header extends Component {
                     <div class="header-section">
                     <div >
         </div>
-        <div className="logo-icon ">
-            <a href="/" className='col-mg-3'>OneClef</a>
-            <Button.Group floated='right' className = 'col-mg-3'>
-            <Button id = "login" onClick={this.loginHandle}>Login</Button>
-            <Button id= "logout" onClick={this.logoutHandle}>Logout</Button>
-            </Button.Group>
-        </div>
+                        <div className="logo-icon ">
+                            <a href="/" className='col-mg-3'>OneClef</a>
+                            <Button.Group floated='right' className = 'col-mg-3'>
+                            <Button id = "login" onClick={this.loginHandle}>Login</Button>
+                            <Button id= "logout" onClick={this.logoutHandle}>Logout</Button>
+                            </Button.Group>
+                        </div>
                     </div>
                 </div>
-        <div className="left-side-inner">
-        <ul className="nav nav-pills nav-stacked custom-nav">
-       
-            <li className="active"><a href="/"><i className="lnr lnr-home" ></i><span >Home</span></a></li>
-            <li><a href="/artist"><i className="lnr lnr-users"></i> <span >Artists</span ></a></li> 
-            <li><a href="/artist_dash"><i className="lnr lnr-music-note"></i> <span >Albums</span></a></li>
-            <li className="menu-list"><a href="/fan_dash"><i className="lnr lnr-heart"></i> <span >My Favourities</span></a></li>
-        </ul>
-    
+                 <div className="left-side-inner">
+                            <ul className="nav nav-pills nav-stacked custom-nav">
+                        
+                                <li className="active"><a href="/"><i className="lnr lnr-home" ></i><span >Home</span></a></li>
+                                <li><a href="/artist"><i className="lnr lnr-users"></i> <span >Artists</span ></a></li> 
+                                <li><a href="/artist_dash"><i className="lnr lnr-music-note"></i> <span >Albums</span></a></li>
+                                <li className="menu-list"><a href="/fan_dash"><i className="lnr lnr-heart"></i> <span >My Favourities</span></a></li>
+                            </ul>
+                        </div>
                      </div>
-                 </div>
-             <div class="clearfix"></div>
+                 <div class="clearfix"></div>
              <div />
            </section>
          </div>
